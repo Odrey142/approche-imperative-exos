@@ -39,6 +39,15 @@ public class Ex11_FirstLast6 {
 
 		// TODO LOGUEZ la valeur obtenue pour chacun des 6 tableaux tab1 à tab6
 		
+		boolean [] monTableau= new boolean[];
+		
+		for (int i=1; i<=6; i++) {
+            int[] tab = (int[])this.getClass().getDeclaredField("tab"+i).get(this);
+            System.out.println(Arrays.toString(tab));
+		}
+			
+	 }
+		
 		
 		
         }
