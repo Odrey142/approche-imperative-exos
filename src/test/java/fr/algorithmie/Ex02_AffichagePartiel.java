@@ -26,6 +26,13 @@ public class Ex02_AffichagePartiel {
 		
 		//TODO En utilisant une boucle et un if, LOGUER avec Resultat.log 
 		// les valeurs du tableau supérieures ou égales à 3
+		
+		for (int i = 0; i<=array.length-1;i++) {
+			if (array[i] >=3) {
+				System.out.println("les valeurs supérieurs ou égales à 3 sont :");
+				Resultat.log(array [i]);
+				}
+		}
 	}
 	
 	@Test
@@ -33,6 +40,14 @@ public class Ex02_AffichagePartiel {
 	public void affichageValeursPaires() {
 		
 		//TODO LOGUER avec Resultat.log les valeurs paires du tableau (0 sera considéré comme pair)
+		for(int i= 0; i<= array.length-1; i++) {
+			if (array[i]%2 == 0) {
+			System.out.println("les valeurs paires du tableau sont :");
+			Resultat.log(array[i]);
+			}
+			
+		}
+		
 	}
 	
 	@Test
@@ -41,6 +56,13 @@ public class Ex02_AffichagePartiel {
 		
 		//TODO LOGUER avec Resultat.log les valeurs correspondant aux index pairs du tableau 
 		// (0 sera considéré comme pair)
+		
+		for(int i= 0; i<= array.length-1; i++) {
+			if (i%2 == 0 ) {
+			System.out.println("les valeurs correspondant aux index pair du tableau sont :");
+			Resultat.log(array[i]);
+			}
+		}
 	}
 	
 	@Test
@@ -48,6 +70,11 @@ public class Ex02_AffichagePartiel {
 	public void affichageValeursImpaires() {
 		
 		//TODO LOGUER avec Resultat.log les valeurs impaires positives du tableau (0 doit être exclu)
-		
+		for(int i = 0; i<= array.length-1; i++) {
+			if (array[i]%2!=0 && array[i]>0) {
+				System.out.println("les valeurs impaires positives sont :");
+				Resultat.log(array[i]);
+			}
+		}
 	}
 }
