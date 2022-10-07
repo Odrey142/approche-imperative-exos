@@ -40,7 +40,7 @@ public class Ex10_ComparaisonTableau {
 		//Resultat.log(array2[j]);
 		
 			if ( array1[i] == array2[j]) {
-				i--;
+				Resultat.log(array2[j]);
 		
 			}
 			}
