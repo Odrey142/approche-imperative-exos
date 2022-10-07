@@ -32,16 +32,18 @@ public class Ex06_RechercheMax {
 		
 
 			
-			int maximun=28;	
+			int maximun=array[0];	
 			
 			for ( int i=0; i<=array.length-1; i++)	{
 					if (array[i] >maximun)	{
-						maximun=array[i];
+						maximun=array[i];		
+						
+				System.out.println("la valeur maximal est:");
+				Resultat.log(maximun);
 					}
 				
 			}
-				System.out.println("la valeur maximal est:");
-				Resultat.log(maximun);
+		
 			
 			 }
 				

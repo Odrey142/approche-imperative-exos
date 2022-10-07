@@ -9,14 +9,14 @@ import outils.Question;
 import outils.Resultat;
 
 /**
- * Ne modifiez ni les noms des classes, ni les noms des méthodes.
- * Utilisez Resultat.log pour afficher les résultats
+ * Ne modifiez ni les noms des classes, ni les noms des méthodes. Utilisez
+ * Resultat.log pour afficher les résultats
  * 
  * @author DIGINAMIC
  *
  */
 @RunWith(ExerciceRunner.class)
-@Exercice(nom="ComparaisonTableau")
+@Exercice(nom = "ComparaisonTableau")
 public class Ex10_ComparaisonTableau {
 
 	int[] array1 = { 1, 15, -3, 8, 7, 4, -2, 28, -1, 17, 2, 3, 0, 14, -4 };
@@ -34,11 +34,17 @@ public class Ex10_ComparaisonTableau {
 		// Combien y en a t'il au total ?
 		
 		for(int i=0; i<= array1.length-1;i++) {
-		Resultat.log(array1[i]);
-		}
-		for(int i=0; i<= array2.length-1;i++) {
-		Resultat.log(array2[i]);
-		}
+		//Resultat.log(array1[i]);
 		
-	}
+		for(int j=0; j<= array2.length-1;j++) {
+		//Resultat.log(array2[j]);
+		
+			if ( array1[i] == array2[j]) {
+				i--;
+			Resultat.log(j);	
+			}
+			}
+		}
+		}
+
 }
