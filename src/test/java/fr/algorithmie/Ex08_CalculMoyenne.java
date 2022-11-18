@@ -30,17 +30,21 @@ public class Ex08_CalculMoyenne {
 		//TODO Calculez et LOGUEZ la moyenne des valeurs du tableau (la moyenne doit être une valeur décimale).
 
 
-double somme = 0;
-		for ( int i=0; i<=array.length-1; i++)	{
-			 somme = somme + array[i];
+double somme1 = 0;
+		for ( int i=0; i<array.length; i++)	{
+			 somme1 = somme1 + array[i];
+			 
 			 }
 			 
-		double moyenne = somme / array.length;
-		System.out.println("la moyenne est:");
-		Resultat.log(moyenne);
+		double moyenne1 = somme1 / array.length;
+		System.out.println("la moyenne1 est:");
+		Resultat.log(moyenne1);
 	
 		
 	}
+	
+	
+	
 	
 	@Test
 	@Question(numero=2)
@@ -48,16 +52,16 @@ double somme = 0;
 		
 		//TODO Calculez et LOGUEZ la moyenne des valeurs POSITIVES du tableau
 		
-	double somme = 0;
-		for ( int i=0; i<=array.length-1; i++)	{
+	double somme2 = 0;
+		for ( int i=0; i<array.length; i++){
 			while (i > 0) {
-			 somme = somme + array[i];
-			}	
+			 somme2 = somme2 + array[i];
+			}		
 		}
 			 
-		double moyenne = somme / array.length;
-		System.out.println("la moyenne est:");
-		Resultat.log(moyenne);
+		double moyenne2 = somme2 / array.length;
+		System.out.println("la moyenne2 est:");
+		Resultat.log(moyenne2);
 	}
 
 }

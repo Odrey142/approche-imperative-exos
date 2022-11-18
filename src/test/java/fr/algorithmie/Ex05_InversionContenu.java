@@ -1,5 +1,7 @@
 package fr.algorithmie;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -8,18 +10,19 @@ import outils.ExerciceRunner;
 import outils.Question;
 import outils.Resultat;
 
-/** Ne modifiez ni les noms des classes, ni les noms des méthodes.
- * Utilisez Resultat.log pour afficher les résultats
+/**
+ * Ne modifiez ni les noms des classes, ni les noms des méthodes. Utilisez
+ * Resultat.log pour afficher les résultats
  * 
  * @author DIGINAMIC
  *
  */
 @RunWith(ExerciceRunner.class)
-@Exercice(nom="InversionContenu")
+@Exercice(nom = "InversionContenu")
 public class Ex05_InversionContenu {
 
-	int[] array = {1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
-	
+	int[] array = { 1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4 };
+
 	@Test
 	@Question(numero=1)
 	public void affichageTableauArrayCopy() {
@@ -29,11 +32,21 @@ public class Ex05_InversionContenu {
 		// Pour être plus précis, arrayCopy commence par les nombres suivants : -4, 14, 0, etc..
 		
 		// TODO LOGUER le contenu de ce tableau arrayCopy
-		
-		int[] arrayCopy = array;
-		for(int i= arrayCopy.length-1;i>=0;i--) {
-			System.out.println("le contenu du tableau est :");
-			Resultat.log(arrayCopy[i]);
-		}
+//		
+//		int[] arrayCopy = array;
+//		for(int i= arrayCopy.length-1;i>=0;i--) {
+//			System.out.println("le contenu du tableau est :");
+//			Resultat.log(arrayCopy[i]);
+//		}
+		int [] arrayCopy = Arrays.copyOf(array, array.length);
+			for (int i = 0; i < arrayCopy.length; i++) {
+				Resultat.log(arrayCopy[arrayCopy.length-1-i]);
+			}
 	}
 }
+			
+		
+			
+			
+		
+	
