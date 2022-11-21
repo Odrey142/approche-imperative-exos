@@ -42,7 +42,6 @@ public class Ex11_FirstLast6 {
 
 		boolean b = false;
 		for (int i = 0; i < tab1.length; i++) {
-
 			if ((tab1[i] != 0) && ((tab1[0] == 6) || (tab1[tab1.length - 1] == 6))) {
 				b = true;
 			} else {
@@ -55,7 +54,6 @@ public class Ex11_FirstLast6 {
 
 		boolean b1;
 		for (int i = 0; i < tab2.length; i++) {
-
 			if ((tab2[i] != 0) && ((tab2[0] == 6) || (tab2[tab2.length - 1] == 6))) {
 				b1 = true;
 			} else {
@@ -68,7 +66,6 @@ public class Ex11_FirstLast6 {
 
 		boolean b2;
 		for (int i = 0; i < tab3.length; i++) {
-
 			if ((tab3[i] != 0) && (tab3[0] == 6 || tab3[tab3.length - 1] == 6)) {
 				b2 = true;
 			} else {
@@ -79,9 +76,9 @@ public class Ex11_FirstLast6 {
 			break;
 		}
 
+		
 		boolean b3;
-		for (int i = 0; i < tab4.length; i++) {
-
+		for (int i = 0; i< tab4.length; i++) {
 			if ((tab4[i] != 0) && (tab4[0] == 6 || tab4[tab4.length - 1] == 6)) {
 				b3 = true;
 			} else {
@@ -93,8 +90,7 @@ public class Ex11_FirstLast6 {
 		}
 
 		boolean b4;
-		for (int i = 0; i < tab5.length; i++) {
-
+		for (int i = 0; i < tab5.length;  i++) {
 			if ((tab5[i] != 0) && (tab5[0] == 6 || tab1[tab5.length - 1] == 6)) {
 				b4 = true;
 			} else {
@@ -106,8 +102,7 @@ public class Ex11_FirstLast6 {
 		}
 
 		boolean b5;
-		for (int i = 0; i < tab6.length; i++) {
-
+		for (int i = 0; i < tab6.length; i++ ) {
 			if ((tab6[i] != 0) && (tab6[0] == 6 || tab6[tab6.length - 1] == 6)) {
 				b5 = true;
 			} else {
@@ -121,3 +116,4 @@ public class Ex11_FirstLast6 {
 	}
 
 }
+
